@@ -33,6 +33,7 @@ describe('PropertyListing', () => {
 
         expect(axios.get).toHaveBeenCalledTimes(1);
         expect(wrapper.find('PropertyCard')).toHaveLength(0);
+        expect(wrapper.find('h2')).toHaveLength(1);
         expect(wrapper.find('h2').at(0).props().children).toEqual('No properties');
     });
 
